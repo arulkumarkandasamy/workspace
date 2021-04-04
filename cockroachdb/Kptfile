@@ -1,0 +1,11 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+  name: cockroachdb
+upstream:
+  type: git
+  git:
+    commit: 38b947140bcfab046f16ac8f6f27929afa237348
+    repo: https://github.com/arulkumarkandasamy/kptupdatedemo
+    directory: /cockroachdb
+    ref: main
